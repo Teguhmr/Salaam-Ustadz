@@ -11,7 +11,7 @@ This code sample also demonstrates how to implement Data Binding with LiveData.
 Getting Started
 ---------------
 
-1. Download and run the [app](https://s.id/Aplikasi-SalaamUstadz).
+1. [Download](https://s.id/Aplikasi-SalaamUstadz) and run the app.
 2. Creating an Accountn.
 3. Logging In.
 4. Navigating the App.
