@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.zakat.ZakatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            app:contentScrim="@color/soft_yellow_green"
+            app:layout_scrollFlags="noScroll"
+            app:toolbarId="@id/toolbar">
+
+            <ImageView
+                android:id="@+id/img_toolbar_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="0dp"
+                app:navigationIcon="@drawable/arrow_back"
+                app:navigationIconTint="@color/white"
+                app:popupTheme="@style/OverflowMenu"
+                app:title=" " />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="bottom"
+                android:importantForAccessibility="no"
+                android:src="@drawable/bg_prayer" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:paddingBottom="@dimen/_60sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_lt_std_85_heavy"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:text="@string/header_stf"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_text_blue_09678D"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/avenir_lt_std_85_heavy"
+                    android:text="@string/label_info_lembaga"
+                    android:textColor="@color/color_text_blue_0094FF"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/avenir_lt_std_65_medium"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:text="@string/info_lembaga"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:id="@+id/imgInfoStf"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:importantForAccessibility="no"
+                    tools:src="@tools:sample/avatars"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/avenir_lt_std_85_heavy"
+                    android:text="@string/label_info_stf"
+                    android:textColor="@color/color_text_blue_0094FF"
+                    android:textSize="@dimen/_11ssp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnInfoSTF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:drawableEnd="@drawable/ic_arrow_outward"
+                    android:drawableTint="@color/color_text_blue_0094FF"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:text="@string/label_web_stf"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_text_blue_0094FF"
+                    android:textSize="@dimen/_10ssp"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="@dimen/_8sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/avenir_lt_std_85_heavy"
+                    android:text="@string/label_documentation"
+                    android:textColor="@color/color_text_blue_0094FF"
+                    android:textSize="@dimen/_11ssp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_documentation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:id="@+id/dotLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_bottom_zakat"
+            android:paddingVertical="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDonasiSTF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:drawableEnd="@drawable/ic_arrow_outward"
+                android:drawableTint="@color/white"
+                android:text="@string/label_website_stf_uin_jkt"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_10ssp"
+                app:backgroundTint="@color/dark_blue_primary"
+                app:cornerRadius="@dimen/_8sdp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

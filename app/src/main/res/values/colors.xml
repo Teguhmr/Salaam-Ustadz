@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#ABABAB</color>
+    <color name="black_transparent">#6F000000</color>
+    <color name="gray_transparent">#80ABABAB</color>
+    <color name="white_transparent">#80EAEAEA</color>
+    <color name="gray_deleted">#CACACA</color>
+    <color name="gray_not_available">#E3E3E3</color>
+    <color name="icon_bottom_grey">#979797</color>
+    <color name="text_specialize_color">@color/icon_bottom_grey</color>
+    <color name="soft_yellow_green">#E5EEBF</color>
+    <color name="nav_bar">#F5F8E7</color>
+    <color name="indicator_active">#E4E8D1</color>
+    <color name="soft_yellow_green_1_default">#DEEBAD</color>
+    <color name="soft_yellow_green_2">#EBE1BB</color>
+    <color name="soft_yellow_green_5">#F5F8E7</color>
+    <color name="soft_yellow_green_4_in_use">#E5EEBF</color>
+    <color name="soft_yellow_green_3_in_use">#F2F0E0</color>
+    <color name="hard_yellow_green">#8F986A</color>
+    <color name="yellow_rating">#FFC107</color>
+
+    <color name="bookmark_filled_orange">#DD4F1F</color>
+
+    <color name="color_text_orange">#FF3D00</color>
+    <color name="color_button_orange">#DD4F1F</color>
+    <color name="color_bg_donate">#F6DFED</color>
+    <color name="color_btn_donate">#6F1F51</color>
+    <color name="color_text_blue">#1B3170</color>
+    <color name="color_text_blue_7BBEBC">#7BBEBC</color>
+    <color name="color_text_blue_900">#468DA9</color>
+    <color name="color_soft_blue">#E4F9FF</color>
+    <color name="color_text_blue_09678D">#09678D</color>
+    <color name="color_text_blue_0094FF">#0094FF</color>
+    <color name="color_text_green_500">#0A8278</color>
+    <color name="green_border">#0A8278</color>
+    <color name="green_indicator">#0A8278</color>
+    <color name="gray_900">#F9F9F9</color>
+    <color name="gray_chip">#E4E4E4</color>
+    <color name="dark_blue_primary">#002C45</color>
+    <color name="secondary_text">#757575</color>
+    <color name="primary_text">#354044</color>
+
+    <color name="green_status">#00DF00</color>
+    <color name="schatscreen_color_online">#4FFF3B</color>
+    <color name="schatscreen_color_offline">#FF3B3B</color>
+
+    <color name="red_direction">#FF3B3B</color>
+
+
+    <color name="chatscreen_receiver_bubble_bg">#FFFFFF</color>
+    <color name="chatscreen_sender_bubble_bg">#F9FFE0</color>
+    <color name="chat_screen_bg">#EAEAEA</color>
+    <color name="reply_sender_color">@color/hard_yellow_green</color>
+    <color name="reply_receiver_color">@color/pink_primary</color>
+    <color name="selected_chat_bg">#41007BFF</color>
+
+    <color name="sender_del_text_color">#C6D19B</color>
+    <color name="receiver_del_text_color">#0970AC</color>
+
+    <color name="chat_del_bottomsheet">@color/nav_bar</color>
+    <color name="chat_del_bar_bottomsheet">#FFFFFF</color>
+    <color name="chat_del_tv_bottomsheet">#686868</color>
+    <color name="chat_del_Yes_bottomsheet">#FF3737</color>
+    <color name="chat_del_No_bottomsheet">#8BC34A</color>
+
+    <color name="attachment_popup_bg">#FFFFFF</color>
+    <color name="pink_primary">#FC9C9C</color>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="bottom"
+    android:animateLayoutChanges="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/audio_action_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_lt_std_65_medium"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.04"
+            android:text="@string/hold_for_record"
+            android:textColor="#7a869a"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_animation_bg_circle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_record"
+            app:layout_constraintEnd_toEndOf="@+id/btn_record"
+            app:layout_constraintStart_toStartOf="@+id/btn_record"
+            app:layout_constraintTop_toTopOf="@+id/btn_record"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="button_bgCircle_lottie.lottie"
+            app:lottie_loop="true" />
+
+        <ImageView
+            android:id="@+id/btn_record"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:src="@drawable/ic_start_record"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/audio_action_info"
+            app:layout_constraintStart_toStartOf="@+id/audio_action_info"
+            app:layout_constraintTop_toBottomOf="@+id/audio_action_info"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/txt_record_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_lt_std_65_medium"
+            android:letterSpacing="-0.02"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/record_audio"
+            android:textColor="@color/pink_primary"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_record"
+            app:layout_constraintStart_toStartOf="@+id/btn_record"
+            app:layout_constraintTop_toBottomOf="@+id/btn_record" />
+
+        <Chronometer
+            android:id="@+id/chr_record_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.04"
+            android:textColor="#7a869a"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_record_info"
+            app:layout_constraintStart_toStartOf="@+id/txt_record_info"
+            app:layout_constraintTop_toBottomOf="@+id/txt_record_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/audio_send"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_send_circle"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/audio_delete"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_audio_delete"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/close_record_panel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:text="x"
+        android:textColor="#7a869a"
+        android:textSize="20sp" />
+
+</FrameLayout>

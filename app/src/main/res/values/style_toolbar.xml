@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomToolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/soft_yellow_green</item>
+        <item name="titleTextAppearance">@style/MyToolbarTitleTextAppearance</item>
+    </style>
+    <style name="MyToolbarTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textColor">@color/dark_blue_primary</item>
+        <item name="android:fontFamily">@font/avenir_lt_std_65_medium</item>
+    </style>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED"/>
+
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="http" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SalaamUstadzApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.notification.HistoryNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.consult.ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.screen.walkthrough.WalkThroughActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.RegisterGenderActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".ui.prayer.NotificationService"
+            android:enabled="true"
+            android:foregroundServiceType="systemExempted"
+            android:exported="false" />
+        <receiver
+            android:name=".ui.prayer.BootCompleteReceiver"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".ui.prayer.TimeChangedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".ui.prayer.ReminderReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".presentation.ui.prayer.ReminderReceiver.REMINDER_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.profile.EditProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SalaamUstadzApp" />
+        <activity
+            android:name=".ui.profile.DetailProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.notification.DetailNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.about.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.article.activity.FavoriteArticlesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.article.activity.SearchArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.article.detail.DetailArticleActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.article.activity.UstadzArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.prayer.PrayerActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.prayer.QiblaActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.quran.QuranActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.quran.DetailSurahActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.dzikir.DetailDzikirActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.dzikir.DzikirActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.zakat.ZakatActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.doa.DetailDoaActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.doa.DoaActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.image.ImagePreviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App.ImagePreview" />
+        <activity
+            android:name=".ui.chat.RoomChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.consult.WriteQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.UstadzProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".ui.auth.AuthActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App" />
+        <activity
+            android:name=".ui.auth.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.screen.splash.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".data.firebase.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.uinjkt.salaamustadz"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

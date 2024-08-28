@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>phoneNumber</key>
+        <value>+6283817763084</value>
+    </entry>
+    <entry>
+        <key>urlSalaamUstadz</key>
+        <value>https://github.com/Teguhmr/SalaamUstadz/wiki/Help</value>
+    </entry>
+    <entry>
+        <key>latestVersionCodeSalaamUstadz</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>urlDonate</key>
+        <value>https://saweria.co/salaamustadz</value>
+    </entry>
+    <entry>
+        <key>urlPrivacyPolicy</key>
+        <value>https://github.com/Teguhmr/SalaamUstadz/wiki#kebijakan-privasi</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

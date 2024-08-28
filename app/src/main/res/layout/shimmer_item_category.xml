@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:backgroundTint="@color/gray_chip"
+            android:fontFamily="@font/avenir_lt_std_65_medium"
+            android:text="Muamalah"
+            android:textColor="@android:color/transparent"
+            android:textSize="@dimen/_10ssp"
+            app:chipStrokeColor="@color/gray_chip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray_chip"
+            android:fontFamily="@font/avenir_lt_std_65_medium"
+            android:text="Muamalah"
+            android:textColor="@android:color/transparent"
+            android:textSize="@dimen/_10ssp"
+            app:chipStrokeColor="@color/gray_chip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray_chip"
+            android:fontFamily="@font/avenir_lt_std_65_medium"
+            android:text="Muamalah"
+            android:textColor="@android:color/transparent"
+            android:textSize="@dimen/_10ssp"
+            app:chipStrokeColor="@color/gray_chip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray_chip"
+            android:fontFamily="@font/avenir_lt_std_65_medium"
+            android:text="Muamalah"
+            android:textColor="@android:color/transparent"
+            android:textSize="@dimen/_10ssp"
+            app:chipStrokeColor="@color/gray_chip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

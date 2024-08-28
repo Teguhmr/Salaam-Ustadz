@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:iconTint="@color/dark_blue_primary"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/bookmark_article"
+        android:icon="@drawable/bookmark_outline"
+        android:title="@string/save"
+        app:iconTint="@color/dark_blue_primary"
+        app:showAsAction="ifRoom" />
+</menu>
