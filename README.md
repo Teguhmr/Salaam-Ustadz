@@ -4,9 +4,14 @@ SalaamUstadz App
 Salaam Ustadz is an innovative religious consultation service application. Supported by the expertise and knowledge of renowned religious scholars, 
 this application aims to provide spiritual guidance and answers to religious questions in an easy, fast, and accurate manner.
 
-This code demonstrates the Android Architecture component- ViewModel and LiveData.
-This code sample also demonstrates how to implement Data Binding with LiveData.
-
+This code demonstrates the Android Architecture component- ViewModel, DI and LiveData.
+Tech Stack in this project:
+1. Firebase
+2. Retrofit
+3. Navigation Component
+4. Glide
+5. Timber
+6. Koin
 
 Getting Started
 ---------------
@@ -51,4 +56,4 @@ Doa          |  Dzikr
 
 Profile          |  
 :-------------------------:|:-------------------------:
-<img src="./screenshoot/9.png" width="200">  | 
+<img src="./screenshoot/9.png" width="200">  | <img src="./screenshoot/test" width="200">
