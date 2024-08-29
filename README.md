@@ -24,11 +24,11 @@ Prototype
 Screenshoot
 ---------------
 
-Welcome Screen             |  Game Start
+Splash Screen             |  Sign In
 :-------------------------:|:-------------------------:
-<img src="./screenshoot/img_1.png" width="200">  |  <img src="./screenshoot/img_2.png" width="200">
+<img src="./screenshoot/1.png" width="200">  |  <img src="./screenshoot/2.png" width="200">
 
 
-Hint Word             |  Play Again or Exit
+Home          |  Play Again or Exit
 :-------------------------:|:-------------------------:
-<img src="./screenshoot/img_3.png" width="200">  |  <img src="./screenshoot/img_4.png" width="200">
+<img src="./screenshoot/3.png" width="200">  |  <img src="./screenshoot/img_4.png" width="200">
