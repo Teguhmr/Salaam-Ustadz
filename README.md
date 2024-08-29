@@ -54,6 +54,6 @@ Doa          |  Dzikr
 <img src="./screenshoot/9.png" width="200">  |  <img src="./screenshoot/10.png" width="200">
 
 
-Profile          |  Test
-:-------------------------:|:-------------------------:
-<img src="./screenshoot/9.png" width="200">  | <img src="./screenshoot/test" width="200">
+Profile         
+:-------------------------:
+<img src="./screenshoot/9.png" width="200">  
