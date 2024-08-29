@@ -49,7 +49,7 @@ Doa          |  Dzikr
 <img src="./screenshoot/9.png" width="200">  |  <img src="./screenshoot/10.png" width="200">
 
 
-Profile          |  Quran
+Profile          |  
 :-------------------------:|:-------------------------:
-<img src="./screenshoot/11.png" width="200">  |  Quran
+<img src="./screenshoot/11.png" width="200">  |  <img src="" width="200">
 
